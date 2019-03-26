@@ -5,7 +5,7 @@ import {PathsComponent} from '../../Components/paths/paths.component';
 import {MaterialModule} from '../material/material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {MatProgressSpinnerModule} from '@angular/material';
+import {MatDividerModule, MatProgressSpinnerModule} from '@angular/material';
 import {PathComponent} from '../../Components/path/path.component';
 
 @NgModule({
@@ -19,6 +19,7 @@ import {PathComponent} from '../../Components/path/path.component';
     CommonModule,
     HttpClientModule,
     MatProgressSpinnerModule,
+    MatDividerModule,
     RouterModule.forChild([{
       path: '',
       component: PathsComponent

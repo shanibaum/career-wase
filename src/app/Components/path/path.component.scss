@@ -11,6 +11,11 @@ mat-card{
   border-bottom: 7px solid lightgray;
   margin-bottom: 7px;
 }
- .label_important, .line{
+ .arrow_right, .line{
   display: inline-block;
+}
+.job-title{
+  width: 70%;
+  display: inline-block;
+  font-size: 14px;
 }
