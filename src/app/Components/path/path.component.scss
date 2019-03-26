@@ -1,0 +1,16 @@
+mat-card{
+  height: 200px ;
+  margin: 10px;
+}
+.wrapper {
+  margin: auto;
+  text-align: center;
+}
+.line{
+  width: 70%;
+  border-bottom: 7px solid lightgray;
+  margin-bottom: 7px;
+}
+ .label_important, .line{
+  display: inline-block;
+}

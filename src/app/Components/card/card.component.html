@@ -1,0 +1,46 @@
+<div class="card" [ngClass]="{'detailed': isDetailed}" #card>
+  <div class="content">
+    <div class="front">
+
+      <mat-card class="fb-doc-card">
+        <mat-card-header>
+          <mat-card-title class="p-3">{{name}}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+          <ng-container *ngTemplateOutlet="front"></ng-container>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <!--todo: show on select autocomplete-->
+          <button mat-button (click)="showDetails()">More Details ></button>
+        </mat-card-actions>
+        <mat-card-actions class="m-4">
+          <button mat-button mat-raised-button class="navigate-btn" (click)="onNavigate()">Navigate</button>
+
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+    <div class="back">
+
+      <mat-card class="fb-doc-card">
+        <mat-card-header>
+          <mat-card-title>Hi Tech</mat-card-title>
+          <mat-card-subtitle>QA</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <ng-container *ngTemplateOutlet="back"></ng-container>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-button (click)="showDetails()">Back</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+  </div>
+</div>

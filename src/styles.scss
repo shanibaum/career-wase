@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.main-layout{
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  text-align: center;
+}
+:root {
+  --card-width: 320px;
+  --card-height: 500px;
+  --card-detailed-width: 1000px;
+  --card-detailed-height: 600px;
+}
+
+@keyframes fade {
+  0% {  background-color: initial}
+  100% { background-color: rgba(0, 0, 0, 0.3);  }
+}
+
+#overlay {
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-name: fade;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+$wc-blue :#03B0D5;
+
+h1,h2,h3,h4{
+  color: $wc-blue;
+  padding: 10px;
+}
+button{
+  color: $wc-blue !important;
+}
+mat-focused .mat-form-field-label{ color: $wc-blue; } .mat-focused .mat-form-field-underline .mat-form-field-ripple{ background: $wc-blue; }
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate{
+  color: $wc-blue;
+}
+
+.linkclass{
+  text-decoration: underline;
+  color: #03B0D5;
+  float: right;
+  font-size: 14px;
+  margin: 8px;
+  cursor: pointer;
+}
+.category-img{
+  width: 260px;
+}

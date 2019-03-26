@@ -1,0 +1,66 @@
+//app-card {
+//  display: inline-block;
+//  position: relative;
+//  transition: all .4s;
+//}
+
+.fb-doc-card {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: var(--card-width);
+  height: var(--card-height);
+  left: 0;
+  top: 0;
+  transition: all .4s;
+  margin: 20px;
+
+  &.detailed {
+    .content {
+      transform: rotateY(180deg);
+      //z-index: 1000;
+
+      .back {
+        width: var(--card-detailed-width);
+        height: var(--card-detailed-height);
+      }
+    }
+  }
+
+  .content {
+    transition: all .4s;
+    transform-style: preserve-3d;
+    position: relative;
+
+    .front, .back {
+      transition: all .4s;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--card-width);
+      height: var(--card-height);
+    }
+
+    .front {
+      transform: rotateY(0deg);
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+  }
+}
+mat-card-title{
+  color: #03B0D5;
+}
+
+.navigate-btn{
+  border-radius: 30px;
+}
+
