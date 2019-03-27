@@ -1,14 +1,29 @@
 #linkedin-image{
-  width: 23%;
   cursor: pointer;
-  padding: 10px;
 }
 form{
   margin: auto;
   width: 50%;
 }
 .login-layout{
-  margin: auto;
-  padding: 10px;
+  padding: 12%;
   text-align: center;
+  background-image: url("../../../assets/images/images.png");
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: 100%;
+}
+.container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+  width: 440px;
+  margin: auto;
+  min-height: initial;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+  padding-bottom: 55px;
+}
+mat-form-field{
+  width: 100%;
 }

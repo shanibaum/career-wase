@@ -1,14 +1,16 @@
 <div class="login-layout">
-<h2 translate>Login</h2>
-  <form [formGroup]="signInForm" onsubmit="submit()">
-    <div><mat-form-field class="row example-full-width">
-      <input matInput placeholder="User Name:" value="" formControlName="userName">
-    </mat-form-field></div>
-    <div><mat-form-field class="row example-full-width">
-      <input matInput placeholder="Password" value="">
-    </mat-form-field></div>
-    <a  (click)="onSubmit()">
-      <img id="linkedin-image" src="../../../assets/images/signIn.png"/>
-    </a>
-  </form>
-</div>
+  <div class="container">
+    <h2 class="pt-4">Login</h2>
+    <form [formGroup]="signInForm" onsubmit="submit()" class="bigClass">
+      <div><mat-form-field class="row example-full-width">
+        <input matInput placeholder="User Name:" value="" formControlName="userName">
+      </mat-form-field></div>
+      <div><mat-form-field class="row example-full-width">
+        <input matInput placeholder="Password" value="">
+      </mat-form-field></div>
+      <a  (click)="onSubmit()">
+        <img class="pt-2" id="linkedin-image" src="../../../assets/images/signIn.png"/>
+      </a>
+    </form>
+  </div>
+  </div>
