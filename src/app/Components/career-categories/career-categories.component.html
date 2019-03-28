@@ -1,3 +1,8 @@
 <div class="main-layout">
-  <app-card-category *ngFor="let categorie of categories" [name]=categorie></app-card-category>
+  <app-card-category *ngFor="let categorie of categories"
+                     [name] = categorie.name
+                     [imgPath] =  categorie.path
+                >
+
+  </app-card-category>
 </div>

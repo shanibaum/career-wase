@@ -3,12 +3,12 @@
     <h2 class="pt-4">Login</h2>
     <form [formGroup]="signInForm" onsubmit="submit()" class="bigClass">
       <div><mat-form-field class="row example-full-width">
-        <input matInput placeholder="User Name:" value="" formControlName="userName">
+        <input required matInput placeholder="User Name:" value="" formControlName="userName">
       </mat-form-field></div>
       <div><mat-form-field class="row example-full-width">
-        <input matInput placeholder="Password" value="">
+        <input required type="password" matInput placeholder="Password" value="" formControlName="password">
       </mat-form-field></div>
-      <a  (click)="onSubmit()">
+      <a (click)="onSubmit()">
         <img class="pt-2" id="linkedin-image" src="../../../assets/images/signIn.png"/>
       </a>
     </form>

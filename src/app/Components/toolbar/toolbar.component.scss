@@ -11,7 +11,7 @@ $wc-blue :#03B0D5;
   }
 }
 #student-image{
-  width: 12%;
+  width: 10%;
   border-radius: 49px;
   padding: 4px;
   margin-left: 9px;
@@ -19,9 +19,12 @@ $wc-blue :#03B0D5;
 
 .title{
   font-size: 25px;
-  padding: 35px;
+  display: inline-block;
+  .title-text{
+    display: inline-block;
+  }
 }
 .logo{
-  width: 45px;
-  margin-right: 5px;
+  width: 50px;
+  margin: 1%;
 }

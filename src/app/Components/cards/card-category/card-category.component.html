@@ -1,7 +1,7 @@
 <app-card [name]="name" [front]="front" [back]="back" xmlns="http://www.w3.org/1999/html">
 
   <ng-template #front>
-    <img class="category-img pb-3" src="../../../../assets/images/hi-tech.jpg">
+    <img class="category-img pb-3" src={{imgPath}}>
     <form [formGroup]="form">
       <div>
         <mat-form-field>

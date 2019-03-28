@@ -5,9 +5,14 @@ mat-card{
 .wrapper {
   margin: auto;
   text-align: center;
+  margin-bottom: 40px;
+}
+.divider{
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  margin: 3%;
 }
 .line{
-  width: 70%;
+  width: 85%;
   border-bottom: 7px solid lightgray;
   margin-bottom: 7px;
 }
@@ -15,7 +20,13 @@ mat-card{
   display: inline-block;
 }
 .job-title{
-  width: 70%;
+  width: 85%;
   display: inline-block;
   font-size: 14px;
+}
+mat-card{
+  margin: 5%;
+}
+.wrapper{
+
 }

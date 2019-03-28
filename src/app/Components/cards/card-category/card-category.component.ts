@@ -11,6 +11,7 @@ import {map, startWith} from 'rxjs/operators';
 export class CardCategoryComponent implements OnInit {
   form: FormGroup;
   @Input() name: string;
+  @Input() imgPath: string;
   filteredOptions: Observable<string[]>;
   options: string[] = this.getEntitelmentList();
   myControl = new FormControl();

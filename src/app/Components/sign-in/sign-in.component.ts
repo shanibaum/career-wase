@@ -25,8 +25,10 @@ export class SignInComponent implements OnInit {
     });
   }
   public onSubmit() {
-    this.userSvc.setUserName(this.signInForm.get('userName').value);
-    this.router.navigate(['/categories']);
+    if (this.signInForm.valid) {
+      this.userSvc.setUserName(this.signInForm.get('userName').value);
+      this.router.navigate(['/categories']);
+    }
   }
 
 }
