@@ -1,6 +1,6 @@
-<div class="main-layout">
+<div  *ngIf="showPath" class="main-layout">
   <h1>Career Paths</h1>
   <app-path></app-path>
-  <app-path></app-path>
-  <app-path></app-path>
+  <!--for dynamic data-->
+    <!--<app-path *ngFor="let path of paths" [path] = "path"></app-path>-->
 </div>

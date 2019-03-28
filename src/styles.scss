@@ -3,6 +3,11 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+@font-face {
+  font-family: disneyFont;
+  src: url('../src/assets/fonts/waltograph42.ttf');
+}
+
 .main-layout{
   margin: auto;
   width: 75%;
@@ -52,6 +57,8 @@ mat-focused .mat-form-field-label{ color: $wc-blue; } .mat-focused .mat-form-fie
 .mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate{
   color: $wc-blue;
 }
+
+
 
 .linkclass{
   text-decoration: underline;

@@ -1,5 +1,5 @@
 [
-  {"junctions": ["ComputerSience", "QA", "PO"], "TotalTime": 10, "Type": "Fastest"},
-  {"junctions": ["QA", "Dev", "PO"], "TotalTime": 10, "Type": "Popular"},
-  {"junctions": ["Math", "ProjectManager", "PO"], "TotalTime": 10, "Type": "Shortest"}
+  {"junctions": ["Computer Science", "QA Engineer", "Developer"], "totalTime": 10, "type": "Popular"},
+  {"junctions": ["Programming Course", "QA Engineer", "Developer"], "totalTime": 10, "type": "Fastest"},
+  {"junctions": ["Computer Science", "Developer"], "totalTime": 10, "type": "Shortest"}
 ]

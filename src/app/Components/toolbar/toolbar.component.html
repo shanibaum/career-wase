@@ -5,8 +5,8 @@
       <div class="title-text">CareerWise</div>
     </div>
     <div *ngIf="userName" class="col-6 user-name" >
-      Hello, {{userName}}
-      <img id="student-image" src="../../../assets/images/student.jpg">
+      Hello, {{userName | uppercase}}
+      <img id="student-image" src="../../../assets/images/alice.PNG">
     </div>
   </div>
 </mat-toolbar>

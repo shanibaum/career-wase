@@ -7,6 +7,7 @@ import {MaterialModule} from '../material/material.module';
 import {CardCategoryComponent} from '../../Components/cards/card-category/card-category.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {MatChipsModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatChipsModule,
     RouterModule.forChild([{
       path: '',
       component: CareerCategoriesComponent

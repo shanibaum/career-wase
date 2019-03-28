@@ -8,10 +8,13 @@ import {Observable} from 'rxjs';
   styleUrls: ['./paths.component.scss']
 })
 export class PathsComponent implements OnInit {
-  // showSpinner = true;
+  showPath = false;
+  paths: Object;
+
   constructor(private http: HttpClient) {
-    this.getJSON().subscribe(data => {
-      console.log(data);
+    this.getJSON().subscribe((data: Array<object> ) => {
+      this.paths = data;
+      this.showPath = true;
     });
   }
   ngOnInit() {
